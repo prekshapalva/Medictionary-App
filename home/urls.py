@@ -11,7 +11,7 @@ admin.site.index_title = "Hopitalmanagement - Dashboard"
 # Paths for each attribute
 urlpatterns = [
     path('', views.about, name='about'),
-    path('index', views.index, name='index'),
+    path('dashboard_admin', views.dashboard_admin, name='dashboard_admin'),
     path('administrator', views.administrator, name='administrator'),
     path('doctors', views.doctors, name='doctors'),
     path('patient', views.patient, name='patient'),
@@ -21,6 +21,8 @@ urlpatterns = [
     path('patient_appointment', views.patient_appointment, name='patient_appointment'),
     path('register', views.registerPage, name='register'),
     path('login', views.loginPage, name='login'),
+    path('tables_patients', views.tables_patients, name='tables_patients'),
+    path('tables_doctors', views.tables_doctors, name='tables_doctors')
     #path(‘/<name>/, views.profile, name=‘profile’),
 
 ]

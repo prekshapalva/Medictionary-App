@@ -10,8 +10,8 @@ from django.conf import settings
 # About, Admin, Doctor and Patient page view
 def about(request):
     return render(request, 'about.html')
-def index(request):
-    return render(request, 'index.html')
+def dashboard_admin(request):
+    return render(request, 'dashboard_admin.html')
 def administrator(request):
     return render(request, 'administrator.html')
 def doctors(request):
@@ -22,6 +22,13 @@ def patient_p1(request):
     return render(request, 'patient_p1.html')
 def payment(request):
     return render(request, 'payment.html')
+def tables_doctors(request):
+    return render(request, 'tables_doctors.html')
+def tables_patients(request):
+    return render(request, 'tables_patients.html')
+
+
+
 
 # Patient list (all appointments)
 def patient_appointment(request):
