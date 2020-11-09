@@ -26,6 +26,8 @@ def tables_doctors(request):
     return render(request, 'tables_doctors.html')
 def tables_patients(request):
     return render(request, 'tables_patients.html')
+def main(request):
+    return render(request, 'main.html')
 
 
 

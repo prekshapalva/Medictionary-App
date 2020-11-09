@@ -22,6 +22,7 @@ urlpatterns = [
     path('register', views.registerPage, name='register'),
     path('login', views.loginPage, name='login'),
     path('tables_patients', views.tables_patients, name='tables_patients'),
+    path('main', views.main, name='main'),
     path('tables_doctors', views.tables_doctors, name='tables_doctors')
     #path(‘/<name>/, views.profile, name=‘profile’),
 
